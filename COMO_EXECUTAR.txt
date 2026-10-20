@@ -17,3 +17,7 @@ Arquivos principais:
 - banco.py: acesso e operações no SQLite.
 - validacao.py: regras para validar cadastro.
 - testar_validacao.py: testes automáticos das regras.
+
+Histórico do código
+O projeto usa Git. Para ver o histórico, rode na pasta do projeto:
+git log --oneline
