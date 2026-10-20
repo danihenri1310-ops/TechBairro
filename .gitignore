@@ -1,0 +1,11 @@
+# Arquivos que nao devem entrar no historico
+
+# Banco com os dados dos clientes
+techbairro.db
+
+# Arquivos criados pelo Python
+__pycache__/
+*.pyc
+
+# Pacotes gerados pelo script
+dist/
