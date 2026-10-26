@@ -1,0 +1,2 @@
+# A TechBairro usa apenas bibliotecas incluídas no Python.
+# Não há pacotes externos para instalar com pip.

@@ -1,4 +1,4 @@
-TECHBAIRRO 3.3.1 — COMO EXECUTAR
+TECHBAIRRO 3.3.2 — COMO EXECUTAR
 
 1. Extraia a pasta do pacote.
 2. Abra a pasta no VS Code.
@@ -8,8 +8,13 @@ TECHBAIRRO 3.3.1 — COMO EXECUTAR
 O programa usa SQLite, que já vem com o Python. O arquivo techbairro.db
 é criado automaticamente na pasta do projeto quando o programa é executado.
 
-Para rodar os testes de validação sem abrir a janela, execute:
+Para conferir as regras de validação sem abrir a janela, execute:
 python testar_validacao.py
+
+Documentação:
+- README.md: visão geral, requisitos e execução.
+- docs/manual_de_uso.md: como cadastrar, consultar, editar e excluir.
+- docs/registro_de_testes.md: casos testados e resultados.
 
 Arquivos principais:
 - techbairro.py: janela e interação com o usuário.
@@ -17,7 +22,3 @@ Arquivos principais:
 - banco.py: acesso e operações no SQLite.
 - validacao.py: regras para validar cadastro.
 - testar_validacao.py: testes automáticos das regras.
-
-Histórico do código
-O projeto usa Git. Para ver o histórico, rode na pasta do projeto:
-git log --oneline

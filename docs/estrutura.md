@@ -1,8 +1,11 @@
-# Estrutura do projeto
+# Estrutura da TechBairro
 
-- `techbairro.py`: janela e funções da tela.
-- `cliente.py`: classe `Cliente`.
-- `banco.py`: operações com o banco SQLite.
-- `validacao.py`: regras para conferir os dados do cliente.
-- `testar_validacao.py`: testes das regras sem abrir a janela.
-- `scripts/`: script que cria o pacote ZIP.
+O projeto foi dividido por responsabilidade para facilitar a leitura e a manutenção.
+
+- `techbairro.py`: interface Tkinter e interação com o usuário.
+- `cliente.py`: representa os dados de um cliente.
+- `banco.py`: cria a tabela e faz cadastro, consulta, edição e exclusão no SQLite.
+- `validacao.py`: confere as regras dos dados antes de salvar.
+- `testar_validacao.py`: executa os testes das regras sem abrir a janela.
+- `scripts/gerar_pacote.py`: monta o ZIP para distribuição.
+- `docs/`: manual, registro de testes e documentação do projeto.

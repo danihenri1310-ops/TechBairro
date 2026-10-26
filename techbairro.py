@@ -807,8 +807,8 @@ tk.Button(
 # MUDOU NA AULA 16: v3.2 (banco aberto pelo caminho completo)
 # MUDOU NA AULA 17: o arquivo passou a se chamar techbairro.py;
 # a versão fica aqui no rótulo e no CHANGELOG, não no nome do arquivo
-# NOVO NA AULA 21: versão atualizada para 3.3.1.
-VERSAO = "3.3.1"
+# NOVO NA AULA 27: versão atualizada para 3.3.2.
+VERSAO = "3.3.2"
 
 tk.Label(
     janela,

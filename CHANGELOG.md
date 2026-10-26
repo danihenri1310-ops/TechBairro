@@ -1,5 +1,17 @@
 # Histórico de versões — TechBairro
 
+## v3.3.2 (Aula 27)
+
+### Adicionado
+- README com requisitos, execução e informações sobre o banco de dados.
+- Arquivo requirements.txt.
+- Manual de uso em docs/manual_de_uso.md.
+- Registro dos seis testes em docs/registro_de_testes.md.
+
+### Organização
+- Atualização da versão para 3.3.2 nos arquivos do projeto.
+- Pacote de distribuição atualizado para incluir as instruções e a documentação.
+
 ## v3.3.1 (Aula 21)
 
 - A classe `Cliente` foi separada para `cliente.py`.
