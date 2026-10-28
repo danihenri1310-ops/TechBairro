@@ -42,5 +42,5 @@ Ele pode baixar o repositório em ZIP ou cloná-lo, instalar uma versão do Pyth
 ## Links finais
 
 - Repositório: https://github.com/danihenri1310-ops/TechBairro
-- Release 3.3.2: - Release 3.3.2: https://github.com/danihenri1310-ops/TechBairro/releases/tag/v3.3.2
+- Release 3.3.2: https://github.com/danihenri1310-ops/TechBairro/releases/tag/v3.3.2
 - Vídeo: **PREENCHER DEPOIS DE PUBLICAR**.
