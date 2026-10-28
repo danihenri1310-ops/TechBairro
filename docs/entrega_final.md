@@ -13,9 +13,9 @@ Aluno: **Daniel Henrique** · Versão: **3.3.2**
 | 3 | Pacote testado numa pasta limpa | `dist/TechBairro-3.3.2.zip`; pacote extraído em pasta temporária, testes automáticos aprovados. Repetir a abertura no Windows. |
 | 4 | Tag e Release publicadas com ZIP anexado | Tag `v3.3.2` e Release publicadas no GitHub, com `TechBairro-3.3.2.zip` anexado. [Abrir Release 3.3.2](https://github.com/danihenri1310-ops/TechBairro/releases/tag/v3.3.2). |
 | 5 | O repositório não rastreia banco, cache nem `dist` | Conferido com `git ls-files`: `techbairro.db`, `__pycache__`, `.pyc` e `dist/` não estão rastreados. |
-| 6 | Histórico com mensagens claras | Após o push, conferir em https://github.com/danihenri1310-ops/TechBairro/commits/main |
-| 7 | README, manual e requirements estão no repositório | `README.md`, `docs/manual_de_uso.md`, `requirements.txt`. Conferir depois do push. |
-| 8 | A Issue “Teste do README” está fechada | **Pendente:** localizar ou criar a Issue no GitHub, conferir o README e fechar a Issue. |
+| 6 | Histórico com mensagens claras | Histórico de commits publicado: [abrir histórico](https://github.com/danihenri1310-ops/TechBairro/commits/main) |
+| 7 | README, manual e requirements estão no repositório | Arquivos confirmados no repositório: `README.md`, `docs/manual_de_uso.md` e `requirements.txt`. |
+| 8 | A Issue “Teste do README” está fechada | Issue #1: https://github.com/danihenri1310-ops/TechBairro/issues/1 |
 | 9 | O vídeo de até 3 minutos está publicado e abre sem login | **Pendente:** gravar, publicar como Não listado no YouTube ou “Qualquer pessoa com o link” no Drive e colar aqui o link. |
 
 ## Roteiro do vídeo
@@ -42,5 +42,5 @@ Ele pode baixar o repositório em ZIP ou cloná-lo, instalar uma versão do Pyth
 ## Links finais
 
 - Repositório: https://github.com/danihenri1310-ops/TechBairro
-- Release 3.3.2: **PREENCHER DEPOIS DE PUBLICAR**.
+- Release 3.3.2: - Release 3.3.2: https://github.com/danihenri1310-ops/TechBairro/releases/tag/v3.3.2
 - Vídeo: **PREENCHER DEPOIS DE PUBLICAR**.
