@@ -11,7 +11,7 @@ Aluno: **Daniel Henrique** · Versão: **3.3.2**
 | 1 | Os seis casos de teste foram executados | `docs/registro_de_testes.md` registra os resultados de um ambiente de teste Linux com tela virtual. Repetir no Windows antes de gravar. |
 | 2 | A versão está igual na janela, CHANGELOG e README | `techbairro.py`, `CHANGELOG.md` e `README.md` mostram `3.3.2`. Confirmar na janela do próprio computador. |
 | 3 | Pacote testado numa pasta limpa | `dist/TechBairro-3.3.2.zip`; pacote extraído em pasta temporária, testes automáticos aprovados. Repetir a abertura no Windows. |
-| 4 | Tag e Release publicadas com ZIP anexado | Tag `v3.3.2` está no repositório local. **Pendente:** enviar a tag e publicar a Release. Link: Release 3.3.2: https://github.com/danihenri1310-ops/TechBairro/releases/tag/v3.3.2 |
+| 4 | Tag `v3.3.2` e Release publicadas no GitHub, com o ZIP anexado. Link: https://github.com/danihenri1310-ops/TechBairro/releases/tag/v3.3.2 |
 | 5 | O repositório não rastreia banco, cache nem `dist` | Conferido com `git ls-files`: `techbairro.db`, `__pycache__`, `.pyc` e `dist/` não estão rastreados. |
 | 6 | Histórico com mensagens claras | Após o push, conferir em https://github.com/danihenri1310-ops/TechBairro/commits/main |
 | 7 | README, manual e requirements estão no repositório | `README.md`, `docs/manual_de_uso.md`, `requirements.txt`. Conferir depois do push. |
