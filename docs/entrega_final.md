@@ -1,49 +1,46 @@
 # Entrega final da TechBairro
 
-Aluno(a): Daniel Henrique · Versão entregue: 3.3.2
+Aluno: **Daniel Henrique** · Versão: **3.3.2**
 
-**Por que esta versão:** desde a 3.3.1 foram acrescentados o README, os requisitos, o manual de uso e o registro de testes, sem adicionar uma nova função ao programa. Por isso, o último número passa de 1 para 2.
+**Por que a versão 3.3.2:** desde a 3.3.1 foram acrescentados documentação, manual, requisitos e registro de testes, sem criar uma nova função para o usuário. Por isso, o último número da versão aumentou de 1 para 2.
 
-| # | Item | Evidência |
+## Checklist de entrega
+
+| # | Item pedido | Evidência / situação |
 |---|---|---|
-| 1 | A aplicação funciona: os seis casos foram executados | `docs/registro_de_testes.md` |
-| 2 | Versão da janela, CHANGELOG e README conferidas | `techbairro.py`, `CHANGELOG.md` e `README.md` mostram 3.3.2 |
-| 3 | Pacote testado em pasta limpa | Conferido: extraí o pacote numa pasta temporária limpa; `python testar_validacao.py` passou e os seis casos de interface passaram em tela virtual |
-| 4 | Tag e release publicadas, com ZIP anexado | Tag `v3.3.2` criada localmente; falta enviar com `git push` e `git push origin v3.3.2`, depois publicar a release no GitHub com `dist/TechBairro-3.3.2.zip` anexado |
-| 5 | Banco, `__pycache__` e `dist` não são rastreados pelo Git | Conferido: `git ls-files` não lista `techbairro.db`, `__pycache__`, arquivos `.pyc` ou `dist/` |
-| 6 | Histórico com mensagens claras | https://github.com/danihenri1310-ops/TechBairro/commits/main (o commit local 3.3.2 precisa ser enviado com `git push`) |
-| 7 | README, manual e requirements no repositório | `README.md`, `docs/manual_de_uso.md`, `requirements.txt` |
-| 8 | Issue “Teste do README” está fechada | Não encontrei uma issue existente com esse título no repositório consultado; conferir/criar a issue e fechar após verificar o README |
+| 1 | Os seis casos de teste foram executados | `docs/registro_de_testes.md` registra os resultados de um ambiente de teste Linux com tela virtual. Repetir no Windows antes de gravar. |
+| 2 | A versão está igual na janela, CHANGELOG e README | `techbairro.py`, `CHANGELOG.md` e `README.md` mostram `3.3.2`. Confirmar na janela do próprio computador. |
+| 3 | Pacote testado numa pasta limpa | `dist/TechBairro-3.3.2.zip`; pacote extraído em pasta temporária, testes automáticos aprovados. Repetir a abertura no Windows. |
+| 4 | Tag e Release publicadas com ZIP anexado | Tag `v3.3.2` está no repositório local. **Pendente:** enviar a tag e publicar a Release. Link: `PREENCHER DEPOIS DE PUBLICAR`. |
+| 5 | O repositório não rastreia banco, cache nem `dist` | Conferido com `git ls-files`: `techbairro.db`, `__pycache__`, `.pyc` e `dist/` não estão rastreados. |
+| 6 | Histórico com mensagens claras | Após o push, conferir em https://github.com/danihenri1310-ops/TechBairro/commits/main |
+| 7 | README, manual e requirements estão no repositório | `README.md`, `docs/manual_de_uso.md`, `requirements.txt`. Conferir depois do push. |
+| 8 | A Issue “Teste do README” está fechada | **Pendente:** localizar ou criar a Issue no GitHub, conferir o README e fechar a Issue. |
+| 9 | O vídeo de até 3 minutos está publicado e abre sem login | **Pendente:** gravar, publicar como Não listado no YouTube ou “Qualquer pessoa com o link” no Drive e colar aqui o link. |
 
-## Roteiro da apresentação (até 3 minutos)
+## Roteiro do vídeo
 
-| Bloco | Tempo | O que vou mostrar ou dizer |
-|---|---:|---|
-| Problema e solução | 30 s | A TechBairro organiza o cadastro de clientes; versão 3.3.2. |
-| Demonstração ao vivo | 1 min 30 s | Cadastrar um cliente fictício, consultar, editar o telefone, tentar um telefone com espaços e excluir respondendo Não e depois Sim. |
-| Como foi construída | 30 s | Python e Tkinter para a tela, SQLite para os dados, arquivos separados para organizar as responsabilidades, testes e Git para o histórico. |
-| Aprendizado | 30 s | Aprendi a separar o código em módulos e a registrar mudanças com commits. Uma próxima melhoria seria deixar as mensagens de validação ainda mais fáceis de entender. |
+Usar `docs/roteiro_video.md`. Duração máxima: 3 minutos. O roteiro tem problema/solução, demonstração do CRUD e de uma validação, explicação da construção e aprendizado.
 
-## Plano B
+## Perguntas por escrito
 
-Se a janela não abrir durante a apresentação, mostrar o `README.md`, o `docs/registro_de_testes.md` e a página da release quando ela estiver publicada. Deixei capturas de referência em `docs/img/cadastro.png` e `docs/img/consulta.png`, com dados fictícios. Elas foram feitas em tela virtual; se possível, refaça as capturas no computador da apresentação.
+**1. Por que o arquivo `techbairro.db` não está no GitHub?**  
+Porque o banco pode guardar dados pessoais dos clientes. Para evitar publicar esses dados, o banco é ignorado pelo `.gitignore` e não entra no histórico do Git.
 
-## Fichas de avaliação dos colegas
+**2. Qual caso de teste pegou um defeito de verdade? Qual era o defeito?**  
+Em uma versão anterior, a validação percorria só os três primeiros campos e deixava o Endereço vazio passar. O código foi corrigido para verificar os quatro campos. O teste de campos vazios é uma forma de conferir essa correção.
 
-Preencher durante as apresentações de dois colegas. Não preencher antes de observar as apresentações.
+**3. Se o voluntário tiver só o link do repositório, como instala e executa a TechBairro?**  
+Ele pode baixar o repositório em ZIP ou cloná-lo, instalar uma versão do Python 3 com Tkinter, extrair/abrir a pasta no terminal e executar `python techbairro.py`. O arquivo SQLite `techbairro.db` é criado automaticamente na pasta do programa; não é preciso instalar uma biblioteca externa para o SQLite.
 
-| Pergunta | Colega 1 | Colega 2 |
-|---|---|---|
-| O problema e a solução ficaram claros? (sim, em parte, não) |  |  |
-| A demonstração mostrou o CRUD e uma validação? |  |  |
-| Ficou dentro dos 3 minutos? |  |  |
-| O que ficou melhor na apresentação? |  |  |
-| Uma sugestão específica de melhoria |  |  |
+## Autoavaliação — preencher depois de gravar
 
-## Autoavaliação
+- O que ficou bom no meu vídeo: **PREENCHER DEPOIS DE ASSISTIR AO VÍDEO**.
+- O que eu mudaria: **PREENCHER DEPOIS DE ASSISTIR AO VÍDEO**.
+- O que aprendi de mais importante: **PREENCHER COM SUA EXPERIÊNCIA**.
 
-Preencher depois da apresentação, em até cinco linhas:
+## Links finais
 
-- O que funcionou bem:
-- O que eu mudaria:
-- Qual comentário dos colegas foi mais útil:
+- Repositório: https://github.com/danihenri1310-ops/TechBairro
+- Release 3.3.2: **PREENCHER DEPOIS DE PUBLICAR**.
+- Vídeo: **PREENCHER DEPOIS DE PUBLICAR**.

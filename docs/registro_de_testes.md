@@ -1,16 +1,18 @@
 # Registro de testes da TechBairro
 
-Versão testada: **3.3.2** · Data: **26/10/2026** · Responsável: **Daniel Henrique**  
-Ambiente usado nesta conferência: Linux de teste com tela virtual (Xvfb), Python **3.13.5** e Tkinter **8.6**. Como o computador da apresentação pode ser diferente, repita os casos nesse computador antes da aula.
+Versão testada: **3.3.2** · Data do teste: **28/10/2026** · Responsável: **Daniel Henrique**  
+Ambiente desta conferência: **Linux de teste com tela virtual (Xvfb), Python 3.13.5 e Tkinter 8.6**.
 
-| ID | Requisito | Passos e dados | Esperado | Obtido | Status |
+> Os seis casos abaixo foram executados na interface em um ambiente de teste isolado, usando dados fictícios e um banco temporário. Antes da entrega, repita os casos no seu Windows para conferir o comportamento no computador que será usado na gravação. Se as mensagens forem diferentes, atualize a coluna “Obtido” com o texto que apareceu de verdade.
+
+| ID | Requisito | Passos e dados | Esperado | Obtido nesta conferência | Status |
 |---|---|---|---|---|---|
-| CT01 | RF01 | Cadastrar `Ana Souza`, `61999990001`, `ana@email.com`, `Rua 1 Casa 2`. | `Cliente 'Ana Souza' salvo com sucesso!` | `Cliente 'Ana Souza' salvo com sucesso!` | PASSOU |
+| CT01 | RF01 | Cadastrar `Ana Souza`, telefone `61999990001`, e-mail `ana@email.com` e endereço `Rua 1 Casa 2`. | `Cliente 'Ana Souza' salvo com sucesso!` | `Cliente 'Ana Souza' salvo com sucesso!` | PASSOU |
 | CT02 | RF01 | Deixar Nome e Endereço vazios; preencher Telefone e E-mail. | `Preencha o(s) campo(s): Nome, Endereço` | `Preencha o(s) campo(s): Nome, Endereço` | PASSOU |
-| CT03 | RF02 | Informar telefone `61 9999 0000`, com espaços. | `Telefone inválido: use somente números.` | `Telefone inválido: use somente números.` | PASSOU |
-| CT04 | RF03 | Informar e-mail `ana@email`, sem ponto no domínio. | `E-mail inválido: use o formato nome@dominio.com` | `E-mail inválido: use o formato nome@dominio.com` | PASSOU |
-| CT05 | RF05 | Consultar Ana, editar o telefone para `61988880002` e salvar. | `Cliente 'Ana Souza' atualizado com sucesso!` e telefone atualizado no banco. | `Cliente 'Ana Souza' atualizado com sucesso!`; o telefone consultado no banco foi `61988880002`. | PASSOU |
-| CT06 | RF06 | Consultar Ana; na exclusão, responder Não e depois repetir e responder Sim. | Ao responder Não, o registro continua. Ao responder Sim, o cadastro é removido e aparece a mensagem de sucesso. | Com Não, o total continuou em 1. Com Sim, apareceu `Cliente 'Ana Souza' excluído com sucesso!` e o total ficou em 0. | PASSOU |
+| CT03 | RF02 | Informar o telefone `61 9999 0000`, com espaços. | `Telefone inválido: use somente números.` | `Telefone inválido: use somente números.` | PASSOU |
+| CT04 | RF03 | Informar o e-mail `ana@email`, sem ponto no domínio. | `E-mail inválido: use o formato nome@dominio.com` | `E-mail inválido: use o formato nome@dominio.com` | PASSOU |
+| CT05 | RF05 | Consultar Ana, editar o telefone para `61988880002` e salvar. | `Cliente 'Ana Souza' atualizado com sucesso!` e o telefone atualizado no banco. | `Cliente 'Ana Souza' atualizado com sucesso!`; o telefone ficou `61988880002`. | PASSOU |
+| CT06 | RF06 | Consultar Ana, tentar excluir e responder Não; repetir e responder Sim. | Com Não, mantém o cadastro. Com Sim, exclui e confirma na tela. | Com Não, total ficou em 1. Com Sim, apareceu `Cliente 'Ana Souza' excluído com sucesso!` e o total ficou em 0. | PASSOU |
 
 ## Testes automáticos
 
@@ -30,4 +32,4 @@ Também foi executado `python -m py_compile techbairro.py cliente.py banco.py va
 
 ## Defeitos encontrados
 
-Nenhum defeito nos seis casos executados nessa conferência. Os testes da interface foram automatizados numa tela virtual e usaram um banco temporário com dados fictícios; repita a conferência no computador da apresentação.
+Nenhum defeito nos seis casos executados nesta conferência. A execução da interface foi feita em tela virtual no ambiente de teste; repita os mesmos casos no Windows antes de gravar o vídeo. Não use dados reais de clientes.

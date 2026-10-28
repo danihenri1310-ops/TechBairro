@@ -7,6 +7,7 @@
 - Arquivo requirements.txt.
 - Manual de uso em docs/manual_de_uso.md.
 - Registro dos seis testes em docs/registro_de_testes.md.
+- Roteiro do vídeo, perguntas e checklist da entrega final em docs/.
 
 ### Organização
 - Atualização da versão para 3.3.2 nos arquivos do projeto.
