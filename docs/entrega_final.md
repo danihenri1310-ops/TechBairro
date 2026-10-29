@@ -43,4 +43,4 @@ Ele pode baixar o repositório em ZIP ou cloná-lo, instalar uma versão do Pyth
 
 - Repositório: https://github.com/danihenri1310-ops/TechBairro
 - Release 3.3.2: https://github.com/danihenri1310-ops/TechBairro/releases/tag/v3.3.2
-- Vídeo: **PREENCHER DEPOIS DE PUBLICAR**.
+- Vídeo: https://1drv.ms/f/c/0ef7b9d751aad102/IgBtPFchN5VPTLteOQ3JC9wAAeN5rrdTzI5XTp284eAzLOw?e=qgxFwV&utm_source=chatgpt.com
